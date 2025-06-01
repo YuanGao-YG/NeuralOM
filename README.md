@@ -5,7 +5,7 @@
 
  <div align="center">
  
-[![ArXiv](https://img.shields.io/badge/NeuralOM-ArXiv-red.svg)](xx)
+[![ArXiv](https://img.shields.io/badge/NeuralOM-ArXiv-red.svg)](https://arxiv.org/abs/2505.21020)
 
 </div>
 <div align=center>
