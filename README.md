@@ -48,11 +48,26 @@ conda activate neuralom
 
 ### Inference
 
+Preparing the test data as follows:
+
+```
+./data/
+|--test
+|  |--2020.h5
+|--mean_s_t_ssh.npy
+|--std_s_t_ssh.npy
+|--climate_mean_s_t_ssh.npy
+|--land_mask.h5
+```
+
 ```
 sh inference.sh
 ```
    
 ## Training
+
+The training codes will be released after the paper is accepted.
+
 **1. Prepare Data**
 
 Preparing the train, valid, and test data as follows:
