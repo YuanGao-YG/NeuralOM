@@ -59,6 +59,7 @@ Preparing the test data as follows:
 |--climate_mean_s_t_ssh.npy
 |--land_mask.h5
 ```
+Run the following script:
 
 ```
 sh inference.sh
