@@ -6,6 +6,7 @@
  <div align="center">
  
 [![ArXiv](https://img.shields.io/badge/NeuralOM-ArXiv-red.svg)](https://arxiv.org/abs/2505.21020)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/NeuralOM/upload/main)
 
 </div>
 <div align=center>
