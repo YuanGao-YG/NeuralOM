@@ -60,8 +60,6 @@ Preparing the test data as follows:
 |--land_mask.h5
 ```
 
-Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=365/366, C=97, H=360, W=720)
-
 Run the following script:
 
 ```
@@ -94,6 +92,8 @@ Preparing the train, valid, and test data as follows:
 |--climate_mean_s_t_ssh.npy
 |--land_mask.h5
 ```
+
+For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=365/366, C=97, H=361, W=720)
 
 
 **2. Model Training**
