@@ -26,7 +26,7 @@
 
 ## Notes
 
-The full project is avilable on [Hugging Face](xx), you can find the pretrained model, test data on Hugging Face and put them in the same location.
+The full project is avilable on [Hugging Face](https://huggingface.co/YuanGao-YG/NeuralOM/upload/main), you can find the pretrained model, test data on Hugging Face and put them in the same location.
 
 ## Quick Start
 
