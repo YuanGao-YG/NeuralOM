@@ -1,1 +1,0 @@
-The intact project is available at the Hugging Face.
