@@ -22,7 +22,8 @@
 ---
 
 ## News 🚀
-* **2025.06.01**: Codes for inference are released.
+* **2025.07.28**: Inference codes for global ocean forecasting are released.
+* **2025.06.01**: Inference codes for global ocean simulation are released.
 * **2025.05.27**: Paper is released on [ArXiv](https://arxiv.org/abs/2505.21020).
 
 ## Notes
@@ -46,7 +47,7 @@ conda activate neuralom
 ```
 
 
-### Inference
+### Inference for Global Ocean Simulation
 
 Preparing the test data as follows:
 
@@ -63,8 +64,33 @@ Preparing the test data as follows:
 Run the following script:
 
 ```
-sh inference.sh
+sh inference_simulation.sh
 ```
+
+### Inference for Global Ocean Forecasting
+
+Preparing the test data as follows:
+
+```
+./data/
+|--test
+|  |--2020.h5
+|--test_atmos
+|  |--2020.h5
+|--mean_s_t_ssh.npy
+|--std_s_t_ssh.npy
+|--mean_atmos.npy
+|--std_atmos.npy
+|--climate_mean_s_t_ssh.npy
+|--land_mask.h5
+```
+
+Run the following script:
+
+```
+sh inference_forecasting.sh
+```
+
    
 ## Training
 
