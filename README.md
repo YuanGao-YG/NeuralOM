@@ -156,11 +156,11 @@ For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' w
 <img src="img/fig_visual.jpg" width="1080">
 </div>
 
-### Extreme Event Assessment
+### Global Ocean Forecasting and Extreme Event Assessment
 
 </div>
 <div align=center>
-<img src="img/fig_csi.jpg" width="1080">
+<img src="img/fore_csi" width="1080">
 </div>
 
 ## Citation
