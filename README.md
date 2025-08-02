@@ -168,7 +168,7 @@ For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' w
 ```
 @article{gao2025neuralom,
   title={NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation},
-  author={Gao, Yuan and Shu, Ruiqi and Wu, Hao and Xu, Fan and Xiang, Yanfei and Gou, Ruijian and Wen, Qingsong and Wu, Xian and Huang, Xiaomeng},
+  author={Gao, Yuan and Shu, Ruiqi and Wu, Hao and Xu, Fan and Xiang, Yanfei and Gou, Ruijian and Wen, Qingsong and Wu, Xian and Wang, Kun and Huang, Xiaomeng},
   journal={arXiv preprint arXiv:2505.21020},
   year={2025}
 }
