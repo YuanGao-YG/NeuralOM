@@ -5,7 +5,7 @@
 
  <div align="center">
  
-[![ArXiv](https://img.shields.io/badge/NeuralOM-ArXiv-red.svg)](https://arxiv.org/abs/2505.21020)
+[![arXiv](https://img.shields.io/badge/NeuralOM-arXiv-red.svg)](https://arxiv.org/abs/2505.21020)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/NeuralOM/tree/main)
 
 </div>
@@ -24,7 +24,7 @@
 ## News 🚀
 * **2025.07.28**: Inference codes for global ocean forecasting are released.
 * **2025.06.01**: Inference codes for global ocean simulation are released.
-* **2025.05.27**: Paper is released on [ArXiv](https://arxiv.org/abs/2505.21020).
+* **2025.05.27**: Paper is released on [arXiv](https://arxiv.org/abs/2505.21020).
 
 ## Notes
 
