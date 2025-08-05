@@ -177,6 +177,8 @@ For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' w
 ## Acknowledgement
 
 We appreciate the following open-sourced repositories for their valuable code base:
+[https://github.com/NVlabs/FourCastNet](https://github.com/NVlabs/FourCastNet)
 [https://github.com/NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo)
+
 
 #### If you have any questions, please contact [yuangao24@mails.tsinghua.edu.cn](mailto:yuangao24@mails.tsinghua.edu.cn), [wuhao2022@mail.ustc.edu.cn](mailto:wuhao2022@mail.ustc.edu.cn).
