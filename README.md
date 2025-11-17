@@ -22,6 +22,7 @@
 ---
 
 ## News 🚀
+* **2025.11.08**: NeuralOM is accepted by [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/).
 * **2025.07.28**: Inference codes for global ocean forecasting are released.
 * **2025.06.01**: Inference codes for global ocean simulation are released.
 * **2025.05.27**: Paper is released on [arXiv](https://arxiv.org/abs/2505.21020).
