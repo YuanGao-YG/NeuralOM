@@ -1,7 +1,4 @@
-
-
- 
- # <p align=center> NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation</p>
+# <p align=center> NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation</p>
 
  <div align="center">
  
