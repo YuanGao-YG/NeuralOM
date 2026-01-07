@@ -133,7 +133,7 @@ var_idex = {
    
 }
 ```
-Regarding the meaning of abbreviated variables, for example, "SSS" means sea surface salinity and "S2" means salinity at 2 m.
+Regarding the meaning of abbreviated variables, for example, "SSS" means sea surface salinity and "S2" means salinity at depth 2 m.
 
 
 **2. Model Training**
