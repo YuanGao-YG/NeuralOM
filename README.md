@@ -117,7 +117,23 @@ Preparing the train, valid, and test data as follows:
 |--land_mask.h5
 ```
 
-For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=365/366, C=97, H=361, W=720)
+For data ranging from 1993 to 2020, each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=365/366, C=97, H=361, W=720). The order of all variables is as follows:
+
+```
+var_idex = {
+    "SSS": 0, "S2": 1, "S5": 2, "S7": 3, "S11": 4, "S15": 5, "S21": 6, "S29": 7, "S40": 8, "S55": 9, "S77": 10, "S92": 11, "S109": 12,
+    "S130": 13, "S155": 14, "S186": 15, "S222": 16, "S266": 17, "S318": 18, "S380": 19, "S453": 20, "S541": 21, "S643": 22,
+    "U0": 23, "U2": 24, "U5": 25, "U7": 26, "U11": 27, "U15": 28, "U21": 29, "U29": 30, "U40": 31, "U55": 32, "U77": 33, "U92": 34, "U109": 35,
+    "U130": 36, "U155": 37, "U186": 38, "U222": 39, "U266": 40, "U318": 41, "U380": 42, "U453": 43, "U541": 44, "U643": 45,
+    "V0": 46, "V2": 47, "V5": 48, "V7": 49, "V11": 50, "V15": 51, "V21": 52, "V29": 53, "V40": 54, "V55": 55, "V77": 56, "V92": 57, "V109": 58,
+    "V130": 59, "V155": 60, "V186": 61, "V222": 62, "V266": 63, "V318": 64, "V380": 65, "V453": 66, "V541": 67, "V643": 68,
+    "SST": 69, "T2": 70, "T5": 71, "T7": 72, "T11": 73, "T15": 74, "T21": 75, "T29": 76, "T40": 77, "T55": 78, "T77": 79, "T92": 80, "T109": 81,
+    "T130": 82, "T155": 83, "T186": 84, "T222": 85, "T266": 86, "T318": 87, "T380": 88, "T453": 89, "T541": 90, "T643": 91,
+    "SSH": 92,
+   
+}
+```
+Regarding the meaning of abbreviated variables, for example, "SSS" means sea surface salinity and "S2" means salinity at 2 m.
 
 
 **2. Model Training**
