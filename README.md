@@ -19,6 +19,7 @@
 ---
 
 ## News 🚀
+* **2026.01.22**: Training codes are released.
 * **2025.11.08**: NeuralOM is accepted by [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/).
 * **2025.07.28**: Inference codes for global ocean forecasting are released.
 * **2025.06.01**: Inference codes for global ocean simulation are released.
@@ -92,8 +93,6 @@ sh inference_forecasting.sh
    
 ## Training
 
-The training codes will be released after the paper is accepted.
-
 **1. Prepare Data**
 
 Preparing the train, valid, and test data as follows:
@@ -136,20 +135,40 @@ var_idex = {
 Regarding the meaning of abbreviated variables, for example, "SSS" means sea surface salinity and "S2" means salinity at depth 2 m.
 
 
-**2. Model Training**
+**2. Multi-node Multi-GPU Training**
 
+- **Training for the base model**
 
-- **Single GPU Training**
-  
-  Continue update
-- **Single-node Multi-GPU Training**
+(1) 1-step pretraining
 
-  Continue update
-- **Multi-node Multi-GPU Training**
+```
+sh train_base_model.sh
+```
 
-  Continue update
+(2) Modify `./train_base_model.sh` file and `./config/Model.yaml` file.
 
+For instance, if you intent to finetune ckpt from 1-step ckpt (the start training time is  20250501-000000) with 2-step finetune for 10 eppchs, you can set `run_num='20250501-000000'`, `multi_steps_finetune=2`, `finetune_max_epochs=10`, `lr: 1E-6`. Please note that using a small learning rate (lr) to finetune model may contribute to convergence, you can adjust it according to your total batch size.
 
+If you intent to finetune ckpt from 2-step ckpt (the start training time is 20250501-000000) with 3-step finetune for 10 eppchs, you can set `run_num='20250501-000000'`, `multi_steps_finetune=3`, `finetune_max_epochs=10`, `lr: 1E-6`. In our setup, we conduct 6-step finetuning as an example.
+
+(3) Run the following script for multi-step finetuning:
+
+```
+sh train_base_model.sh
+```
+
+- **Training for the residual model**
+
+(1) Modify `./train_residual_model.sh` file and `./config/Model.yaml` file.
+
+For instance, if you intent to  correct the base model (the start training time is  20250501-000000), you can set `run_num='20250501-000000'`, `lr: 1E-3`. And you can adjust the lr according to your total batch size.
+
+(2) Run the following script:
+
+```
+sh train_residual_model.sh
+```
+   
 
 ## Performance
 ### Global Ocean Simulation
