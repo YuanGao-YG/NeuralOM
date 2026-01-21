@@ -12,6 +12,7 @@ from torch.utils.data.distributed import DistributedSampler
 from torch import Tensor
 import h5py
 import math
+import os
 import torchvision.transforms.functional as TF
 # import matplotlib
 # import matplotlib.pyplot as plt
@@ -56,20 +57,14 @@ def reshape_fields(img, inp_or_tar, params, train, normalize=True, orog=None, ad
     else:
         channels = params.out_channels
 
-    if normalize and params.normalization == 'minmax':
-        maxs = np.load(params.global_maxs_path)[:, channels]
-        mins = np.load(params.global_mins_path)[:, channels]
-        img = (img - mins) / (maxs - mins)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(current_dir)
+    mean_path = os.path.join(parent_dir, params.global_means_path)
+    std_path = os.path.join(parent_dir, params.global_stds_path)
 
     if normalize and params.normalization == 'zscore':
-        means = np.load(params.global_means_path)[:, channels]
-        stds = np.load(params.global_stds_path)[:, channels]
-        img -=means
-        img /=stds
-
-    if normalize and params.normalization == 'zscore_lat':
-        means = np.load(params.global_lat_means_path)[:, channels,:720]
-        stds = np.load(params.global_lat_stds_path)[:, channels,:720]
+        means = np.load(mean_path)[:, channels]
+        stds = np.load(std_path)[:, channels]
         img -=means
         img /=stds
 
