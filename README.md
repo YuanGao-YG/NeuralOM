@@ -3,6 +3,7 @@
  <div align="center">
  
 [![arXiv](https://img.shields.io/badge/NeuralOM-arXiv-red.svg)](https://arxiv.org/abs/2505.21020)
+[![Paper](https://img.shields.io/badge/NeuralOM-Paper-yellow.svg)](https://ojs.aaai.org/index.php/AAAI/article/view/38495)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/NeuralOM/tree/main)
 
 </div>
