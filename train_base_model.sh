@@ -46,6 +46,7 @@ nohup torchrun --nproc_per_node=8 --nnodes=2 --node_rank=$NODE_RANK --master_add
 ssh root@30.207.98.235 "
 source ~/.bashrc; \
 conda activate neuralom; \
+cd $TRAIN_DIR; \
 
 export NCCL_IB_GID_INDEX=3
 export NCCL_IB_SL=3
